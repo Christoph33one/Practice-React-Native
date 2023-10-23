@@ -10,7 +10,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 // Here is created a refresh control component that uses a ScrollView to refresh the page when the user pulls down
-// setRefresh state is updated with a timeout function of 1000 milliseconds.
+// setRefresh state is updated with a timeout function of 1000 milliseconds is executed.
 
 function MyRefreshComponent() {
   const [refreshing, setRefreshing] = useState(false);
@@ -30,13 +30,7 @@ function MyRefreshComponent() {
       <ScrollView
         contentContainerStyle={styles.scrollViewContent}
         refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={onRefresh}
-            tintColor="#dodgerblue"
-            colors={["#dodgerblue"]}
-            progressBackgroundColor="white"
-          />
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
       >
         {refreshing ? (
