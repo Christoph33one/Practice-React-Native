@@ -3,9 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import Button from "./components/ButtonComponent";
 import FlatListComponent from "./components/FlatListComponent";
 import RefreshControlComponent from "./components/RefreshControllComponent";
+import ScrollViewcomponent from "./components/ScrollViewcomponent";
 
 export default function App() {
-  return <RefreshControlComponent />;
+  return <ScrollViewcomponent />;
 }
 
 const styles = StyleSheet.create({
@@ -19,3 +20,4 @@ const styles = StyleSheet.create({
 
 // <Button />
 // <FlatListComponent />
+// <RefreshControlComponent />
