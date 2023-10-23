@@ -2,9 +2,10 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import Button from "./components/ButtonComponent";
 import FlatListComponent from "./components/FlatListComponent";
+import RefreshControlComponent from "./components/RefreshControllComponent";
 
 export default function App() {
-  return <FlatListComponent />;
+  return <RefreshControlComponent />;
 }
 
 const styles = StyleSheet.create({
@@ -17,3 +18,4 @@ const styles = StyleSheet.create({
 });
 
 // <Button />
+// <FlatListComponent />
