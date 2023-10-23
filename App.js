@@ -1,9 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import Button from "./components/ButtonComponent";
+import FlatListComponent from "./components/FlatListComponent";
 
 export default function App() {
-  return <Button />;
+  return <FlatListComponent />;
 }
 
 const styles = StyleSheet.create({
@@ -14,3 +15,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+// <Button />
