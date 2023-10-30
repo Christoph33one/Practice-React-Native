@@ -4,9 +4,10 @@ import Button from "./components/ButtonComponent";
 import FlatListComponent from "./components/FlatListComponent";
 import RefreshControlComponent from "./components/RefreshControllComponent";
 import ScrollViewcomponent from "./components/ScrollViewcomponent";
+import TextInput from "./components/TextInput";
 
 export default function App() {
-  return <ScrollViewcomponent />;
+  return <TextInput />;
 }
 
 const styles = StyleSheet.create({
@@ -21,3 +22,4 @@ const styles = StyleSheet.create({
 // <Button />
 // <FlatListComponent />
 // <RefreshControlComponent />
+// <ScrollViewcomponent />
