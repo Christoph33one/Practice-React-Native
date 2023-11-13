@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { StyleSheet, SafeAreaView, TextInput, Button } from "react-native";
+import {
+  StyleSheet,
+  SafeAreaView,
+  TextInput,
+  Button,
+  Alert,
+} from "react-native";
 
 function TextInputExample(props) {
   // useState hook to update the state with an empty string
@@ -10,10 +16,11 @@ function TextInputExample(props) {
     setText(newText);
   };
 
-  // handle sumbmitted text & clears the the input field once the button is clicked
+  // handle sumbmitted text & clears the input field ("") once the button is clicked
   const handleSubmit = () => {
     console.log("Text Submitted");
     setText("");
+    Alert.alert("Are you sure?");
   };
 
   return (

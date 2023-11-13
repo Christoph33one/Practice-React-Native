@@ -5,9 +5,10 @@ import FlatListComponent from "./components/FlatListComponent";
 import RefreshControlComponent from "./components/RefreshControllComponent";
 import ScrollViewcomponent from "./components/ScrollViewcomponent";
 import TextInput from "./components/TextInput";
+import UseState from "./hooks/UseState";
 
 export default function App() {
-  return <TextInput />;
+  return <UseState someProp="Hello I am a prop!" />;
 }
 
 const styles = StyleSheet.create({
@@ -19,6 +20,7 @@ const styles = StyleSheet.create({
   },
 });
 
+// <TextInput />
 // <Button />
 // <FlatListComponent />
 // <RefreshControlComponent />
