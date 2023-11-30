@@ -14,6 +14,9 @@ function UseState(props) {
     setError("");
   };
 
+  // conditional statement to check if not an empty string
+  // .trim nethod to remove whte spaces when adding text.\
+  // else give alert message
   const handleSubmitText = () => {
     if (input.trim() !== "") {
       setSubmittedText(input);
@@ -23,6 +26,10 @@ function UseState(props) {
     }
   };
 
+  // checks submittedText is true
+  // if true, return an empty string
+  // setError state called to clear an previous errors
+  // if false show alert message
   const handleClearText = () => {
     if (submittedText) {
       setSubmittedText("");
